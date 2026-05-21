@@ -7,11 +7,12 @@ public class Main {
         System.out.println(stringCache.get("name")); // -> "HackYourFuture"
         System.out.println(stringCache.get("city")); // -> null
 
-        Cache<Integer> numberCache = new Cache<Integer>();
-        numberCache.put("c1", 12345);
-        numberCache.put("c2", 54321);
-        numberCache.put("c3", 54321);
-        System.out.println(numberCache.size()); // -> 2
+        Cache<Double> numberCache = new Cache<Double>();
+        numberCache.put("c1", 15.25);
+        numberCache.put("c2", 20.25);
+        numberCache.put("c3", 31.77);
+        System.out.println(numberCache.size()); // -> 3
+        System.out.println(numberCache.get("c1")); // -> 15.25
         numberCache.remove("c1");
         System.out.println(numberCache.get("c1")); // -> null
     }
